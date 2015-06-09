@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ch.makery.address.MainBiblioteca">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" height="700.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="1200.0">
+      <fill>
+        <Color blue="0.200" green="0.200" red="1.000" fx:id="x6" />
+      </fill>
+    </Rectangle>
+    <Label layoutX="14.0" layoutY="14.0" text="UVM-Proyecto Final">
+      <font>
+        <Font name="Arial" size="50.0" />
+      </font>
+      <textFill>
+        <Color blue="0.750" green="0.750" red="0.750" fx:id="x8" />
+      </textFill>
+    </Label>
+    <Label layoutX="22.0" layoutY="74.0" text="Biblioteca Luman" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="30.0" />
+      </font>
+    </Label>
+    <TabPane layoutX="22.0" layoutY="119.0" prefHeight="502.0" prefWidth="1152.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Registros">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="1152.0">
+              <children>
+                <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="465.0" prefWidth="1152.0">
+                  <children>
+                    <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="454.0" prefWidth="1130.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="465.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                        <TabPane layoutX="-3.0" layoutY="0.0" prefHeight="454.0" prefWidth="1130.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Registrar Libro">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="386.0" prefWidth="1130.0">
+                                  <children>
+                                    <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="23.0">
+                                      <children>
+                                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="407.0" layoutX="-22.0" layoutY="-24.0" stroke="$x6" strokeType="INSIDE" width="1152.0" />
+                                        <AnchorPane id="AnchorPane" layoutX="11.0" layoutY="0.0">
+                                          <children>
+                                            <Label layoutX="71.0" layoutY="0.0" prefHeight="48.0" prefWidth="166.0" text="Clave del libro:" textFill="WHITE">
+                                              <font>
+                                                <Font name="Arial" size="22.0" fx:id="x2" />
+                                              </font>
+                                            </Label>
+                                            <TextField id="nomProfesor" fx:id="claveLibro" layoutX="251.0" layoutY="7.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="53.0" layoutY="57.0" prefHeight="48.0" prefWidth="181.0" text="Nombre del libro:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="nomLibro" layoutX="251.0" layoutY="64.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="73.0" layoutY="117.0" prefHeight="48.0" prefWidth="161.0" text="Autor del libro:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="autorLibro" layoutX="251.0" layoutY="124.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="562.0" layoutY="0.0" prefHeight="48.0" prefWidth="238.0" text="Clasificación del libro:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="clasificacionLibro" layoutX="793.0" layoutY="7.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Button layoutX="716.0" layoutY="131.0" mnemonicParsing="false" onAction="#registrarLibro" prefHeight="74.0" prefWidth="231.0" text="Registrar">
+                                              <effect>
+                                                <Lighting surfaceScale="3.5634920634920633">
+                                                  <bumpInput>
+                                                    <Shadow />
+                                                  </bumpInput>
+                                                  <light>
+                                                    <javafx.scene.effect.Light.Distant>
+                                                      <color>
+                                                        <Color blue="0.600" green="0.600" red="1.000" fx:id="x3" />
+                                                      </color>
+                                                    </javafx.scene.effect.Light.Distant>
+                                                  </light>
+                                                </Lighting>
+                                              </effect>
+                                              <font>
+                                                <Font name="Arial" size="25.0" fx:id="x4" />
+                                              </font>
+                                            </Button>
+                                          </children>
+                                        </AnchorPane>
+                                      </children>
+                                    </AnchorPane>
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Registrar Miembro">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                  <children>
+                                    <AnchorPane id="AnchorPane" layoutX="36.0" layoutY="23.0" prefHeight="392.0">
+                                      <children>
+                                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="417.0" layoutX="-41.0" layoutY="-23.0" stroke="$x6" strokeType="INSIDE" width="1157.0" />
+                                        <AnchorPane id="AnchorPane" layoutX="7.0" layoutY="23.0">
+                                          <children>
+                                            <Label font="$x2" layoutX="25.0" layoutY="0.0" prefHeight="48.0" prefWidth="212.0" text="Clave del miembro:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="claveMiebro" layoutX="251.0" layoutY="7.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="12.0" layoutY="57.0" prefHeight="48.0" prefWidth="222.0" text="Nombre del miembro:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="nombreMiebro" layoutX="251.0" layoutY="64.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="111.0" layoutY="118.0" prefHeight="48.0" prefWidth="118.0" text="Dirección:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="dirMiebro" layoutX="251.0" layoutY="124.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="115.0" layoutY="175.0" prefHeight="48.0" prefWidth="110.0" text="Teléfono:" textFill="WHITE" />
+                                            <TextField id="nomProfesor" fx:id="telMiebro" layoutX="251.0" layoutY="188.0" prefHeight="35.0" prefWidth="268.0" />
+                                            <Label font="$x2" layoutX="562.0" layoutY="0.0" prefHeight="48.0" prefWidth="238.0" text="Sexo:" textFill="WHITE" />
+                                            <Button font="$x4" layoutX="626.0" layoutY="122.0" mnemonicParsing="false" onAction="#registrarMiembro" prefHeight="74.0" prefWidth="231.0" text="Registrar">
+                                              <effect>
+                                                <Lighting surfaceScale="3.5634920634920633">
+                                                  <bumpInput>
+                                                    <Shadow />
+                                                  </bumpInput>
+                                                  <light>
+                                                    <javafx.scene.effect.Light.Distant color="$x3" />
+                                                  </light>
+                                                </Lighting>
+                                              </effect>
+                                            </Button>
+                                            <RadioButton fx:id="radioHombre" layoutX="597.0" layoutY="52.0" mnemonicParsing="false" selected="true" text="Hombre">
+                                              <font>
+                                                <Font name="Arial" size="23.0" fx:id="x11" />
+                                              </font>
+                                              <textFill>
+                                                <Color blue="0.875" green="0.875" red="0.875" fx:id="x14" />
+                                              </textFill>
+                                              <toggleGroup>
+                                                <ToggleGroup fx:id="sexo" />
+                                              </toggleGroup>
+                                            </RadioButton>
+                                            <RadioButton fx:id="radioMujer" font="$x11" layoutX="754.0" layoutY="55.0" mnemonicParsing="false" text="Mujer" textFill="$x14" toggleGroup="$sexo" />
+                                          </children>
+                                        </AnchorPane>
+                                      </children>
+                                    </AnchorPane>
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Rentas">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="1152.0">
+                  <children>
+                    <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="366.0" prefWidth="1116.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="368.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                        <AnchorPane id="AnchorPane" layoutX="43.0" layoutY="39.0">
+                          <children>
+                            <Label font="$x2" layoutX="20.0" layoutY="55.0" prefHeight="48.0" prefWidth="212.0" text="Clave del miembro:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="rclaveMiembro" layoutX="246.0" layoutY="62.0" prefHeight="35.0" prefWidth="268.0" />
+                            <Label font="$x2" layoutX="56.0" layoutY="112.0" prefHeight="48.0" prefWidth="154.0" text="Clave del libro:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="rclaveLibro" layoutX="245.0" layoutY="119.0" prefHeight="35.0" prefWidth="268.0" />
+                            <Label font="$x2" layoutX="125.0" layoutY="173.0" prefHeight="48.0" prefWidth="80.0" text="Feha:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="rfecha" layoutX="246.0" layoutY="179.0" prefHeight="35.0" prefWidth="268.0" />
+                            <Label font="$x2" layoutX="132.0" layoutY="230.0" prefHeight="48.0" prefWidth="77.0" text="Hora:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="rhora" layoutX="245.0" layoutY="243.0" prefHeight="35.0" prefWidth="268.0" promptText="Ejemplo: 8:15 am" />
+                            <Button font="$x4" layoutX="582.0" layoutY="68.0" mnemonicParsing="false" onAction="#registrarRenta" prefHeight="74.0" prefWidth="231.0" text="Renta">
+                              <effect>
+                                <Lighting surfaceScale="3.5634920634920633">
+                                  <bumpInput>
+                                    <Shadow />
+                                  </bumpInput>
+                                  <light>
+                                    <javafx.scene.effect.Light.Distant color="$x3" />
+                                  </light>
+                                </Lighting>
+                              </effect>
+                            </Button>
+                            <Label font="$x2" layoutX="29.0" layoutY="0.0" prefHeight="48.0" prefWidth="192.0" text="Clave de la renta:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="rclaveRenta" layoutX="246.0" layoutY="7.0" prefHeight="35.0" prefWidth="268.0" />
+                          </children>
+                        </AnchorPane>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="125.0" layoutX="-4.0" layoutY="359.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Entregas">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="1152.0">
+                  <children>
+                    <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="366.0" prefWidth="1116.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="368.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                        <AnchorPane id="AnchorPane" layoutX="43.0" layoutY="39.0">
+                          <children>
+                            <Label font="$x2" layoutX="25.0" layoutY="0.0" prefHeight="48.0" prefWidth="212.0" text="Clave de la renta:" textFill="WHITE" />
+                            <TextField id="nomProfesor" fx:id="eclaveRenta" layoutX="251.0" layoutY="7.0" prefHeight="35.0" prefWidth="268.0" />
+                          </children>
+                        </AnchorPane>
+                        <Button font="$x4" layoutX="613.0" layoutY="26.0" mnemonicParsing="false" onAction="#entregasLibros" prefHeight="74.0" prefWidth="267.0" text="Devolución libro">
+                          <effect>
+                            <Lighting surfaceScale="3.5634920634920633">
+                              <bumpInput>
+                                <Shadow />
+                              </bumpInput>
+                              <light>
+                                <javafx.scene.effect.Light.Distant color="$x3" />
+                              </light>
+                            </Lighting>
+                          </effect>
+                        </Button>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="125.0" layoutX="-4.0" layoutY="359.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Consultas específicas">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLACK" height="386.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="1152.0" />
+                <TabPane layoutX="0.0" layoutY="0.0" prefHeight="386.0" prefWidth="1152.0" tabClosingPolicy="UNAVAILABLE">
+                  <tabs>
+                    <Tab text="Libros">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                            <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="1152.0">
+                              <children>
+                                <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="366.0" prefWidth="1116.0">
+                                  <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="393.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                                    <Label layoutX="14.0" layoutY="84.0" prefHeight="48.0" prefWidth="204.0" text="Nombre de libro:" textFill="WHITE">
+                                      <font>
+                                        <Font name="AR CENA" size="30.0" fx:id="x1" />
+                                      </font>
+                                    </Label>
+                                    <Label font="$x1" layoutX="31.0" layoutY="159.0" prefHeight="48.0" prefWidth="171.0" text="Autor de libro:" textFill="WHITE" />
+                                    <TextField id="emailProfesor" fx:id="bautorLibro" disable="true" layoutX="229.0" layoutY="156.0" opacity="1.0" prefHeight="48.0" prefWidth="827.0" />
+                                    <TextField id="nomProfesor" fx:id="bnombreLibro" disable="true" layoutX="235.0" layoutY="84.0" opacity="1.0" prefHeight="48.0" prefWidth="827.0" />
+                                    <TextField id="usuarioProfesor" fx:id="bclaveLibro" layoutX="235.0" layoutY="13.0" prefHeight="48.0" prefWidth="288.0" promptText="Ingrese clave de libro" />
+                                    <Label font="$x1" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="199.0" text="Clave de libro:" textFill="WHITE" />
+                                    <Label disable="false" layoutX="59.0" layoutY="231.0" prefHeight="48.0" prefWidth="142.0" text="Clasificación:" textFill="WHITE">
+                                      <font>
+                                        <Font name="AR CENA" size="28.0" fx:id="x13" />
+                                      </font>
+                                    </Label>
+                                    <Button layoutX="548.0" layoutY="6.0" minHeight="64.0" mnemonicParsing="false" onAction="#buscarLibro" prefHeight="64.0" prefWidth="250.0" text="Hacer Consulta">
+                                      <effect>
+                                        <Lighting>
+                                          <bumpInput>
+                                            <Shadow />
+                                          </bumpInput>
+                                          <light>
+                                            <javafx.scene.effect.Light.Distant>
+                                              <color>
+                                                <Color blue="1.000" green="0.784" red="0.400" fx:id="x9" />
+                                              </color>
+                                            </javafx.scene.effect.Light.Distant>
+                                          </light>
+                                        </Lighting>
+                                      </effect>
+                                      <font>
+                                        <Font name="AR CENA" size="26.0" fx:id="x12" />
+                                      </font>
+                                      <graphic>
+                                        <ImageView id="ic_find_in_page_black_48dp.png" fitHeight="57.000099999997474" fitWidth="58.0">
+                                          <effect>
+                                            <Lighting>
+                                              <bumpInput>
+                                                <Shadow />
+                                              </bumpInput>
+                                              <light>
+                                                <javafx.scene.effect.Light.Distant>
+                                                  <color>
+                                                    <Color blue="0.400" green="1.000" red="0.000" fx:id="x10" />
+                                                  </color>
+                                                </javafx.scene.effect.Light.Distant>
+                                              </light>
+                                            </Lighting>
+                                          </effect>
+                                          <image>
+                                            <Image url="@../../../../../images/ic_find_in_page_black_48dp.png" preserveRatio="true" smooth="true" />
+                                          </image>
+                                        </ImageView>
+                                      </graphic>
+                                    </Button>
+                                    <TextField id="rfcProfesor" fx:id="bclasificacionLibro" disable="true" layoutX="235.0" layoutY="231.0" opacity="1.0" prefHeight="49.0" prefWidth="827.0" />
+                                    <Label font="$x1" layoutX="811.0" layoutY="14.0" prefHeight="49.0" prefWidth="123.0" text="Disponible:" textFill="WHITE" />
+                                    <TextField fx:id="bdisponible" disable="true" layoutX="941.0" layoutY="12.0" prefHeight="58.0" prefWidth="115.0" />
+                                  </children>
+                                </AnchorPane>
+                              </children>
+                            </AnchorPane>
+                          </children>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                    <Tab text="Miembros">
+                      <content>
+                        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                          <children>
+                            <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="1152.0">
+                              <children>
+                                <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="366.0" prefWidth="1116.0">
+                                  <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="393.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                                    <Label font="$x1" layoutX="14.0" layoutY="84.0" prefHeight="48.0" prefWidth="204.0" text="Nombre  miembro:" textFill="WHITE" />
+                                    <Label font="$x1" layoutX="98.0" layoutY="148.0" prefHeight="48.0" prefWidth="110.0" text="Dirección:" textFill="WHITE" />
+                                    <TextField id="emailProfesor" fx:id="bdirMiembro" disable="true" layoutX="235.0" layoutY="146.0" opacity="1.0" prefHeight="48.0" prefWidth="827.0" />
+                                    <TextField id="nomProfesor" fx:id="bnombreMiembro" disable="true" layoutX="235.0" layoutY="84.0" opacity="1.0" prefHeight="48.0" prefWidth="827.0" />
+                                    <TextField id="usuarioProfesor" fx:id="bclaveMiembro" layoutX="235.0" layoutY="13.0" prefHeight="48.0" prefWidth="288.0" promptText="Ingrese clave de miembro" />
+                                    <Label font="$x1" layoutX="30.0" layoutY="14.0" prefHeight="48.0" prefWidth="199.0" text="Clave de miembro:" textFill="WHITE" />
+                                    <Label disable="false" font="$x13" layoutX="122.0" layoutY="207.0" prefHeight="48.0" prefWidth="96.0" text="Teléfono:" textFill="WHITE" />
+                                    <Button font="$x12" layoutX="548.0" layoutY="6.0" minHeight="64.0" mnemonicParsing="false" onAction="#buscarMiembro" prefHeight="64.0" prefWidth="250.0" text="Hacer Consulta">
+                                      <effect>
+                                        <Lighting>
+                                          <bumpInput>
+                                            <Shadow />
+                                          </bumpInput>
+                                          <light>
+                                            <javafx.scene.effect.Light.Distant color="$x9" />
+                                          </light>
+                                        </Lighting>
+                                      </effect>
+                                      <graphic>
+                                        <ImageView id="ic_find_in_page_black_48dp.png" fitHeight="57.000099999997474" fitWidth="58.0">
+                                          <effect>
+                                            <Lighting>
+                                              <bumpInput>
+                                                <Shadow />
+                                              </bumpInput>
+                                              <light>
+                                                <javafx.scene.effect.Light.Distant color="$x10" />
+                                              </light>
+                                            </Lighting>
+                                          </effect>
+                                          <image>
+                                            <Image url="@../../../../../images/ic_find_in_page_black_48dp.png" preserveRatio="true" smooth="true" />
+                                          </image>
+                                        </ImageView>
+                                      </graphic>
+                                    </Button>
+                                    <TextField id="rfcProfesor" fx:id="btelMiembro" disable="true" layoutX="235.0" layoutY="205.0" opacity="1.0" prefHeight="49.0" prefWidth="827.0" />
+                                    <Label disable="false" font="$x13" layoutX="144.0" layoutY="266.0" prefHeight="48.0" prefWidth="74.0" text="Sexo:" textFill="WHITE" />
+                                    <TextField id="emailProfesor" fx:id="bsexoMiembro" disable="true" layoutX="235.0" layoutY="266.0" opacity="1.0" prefHeight="48.0" prefWidth="827.0" />
+                                  </children>
+                                </AnchorPane>
+                              </children>
+                            </AnchorPane>
+                          </children>
+                        </AnchorPane>
+                      </content>
+                    </Tab>
+                  </tabs>
+                </TabPane>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="83.0" layoutX="-8.0" layoutY="380.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Consultas Generales">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="146.0" layoutX="-22.0" layoutY="308.0" stroke="$x6" strokeType="INSIDE" width="1186.0" />
+                <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="1152.0">
+                  <children>
+                    <AnchorPane id="AnchorPane" layoutX="22.0" layoutY="0.0" prefHeight="366.0" prefWidth="1116.0">
+                      <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="368.0" layoutX="-30.0" layoutY="-2.0" stroke="$x6" strokeType="INSIDE" width="1160.0" />
+                        <TabPane layoutX="0.0" layoutY="0.0" prefHeight="366.0" prefWidth="1130.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Libros">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="1130.0">
+                                  <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="58.0" layoutX="0.0" layoutY="260.0" stroke="$x6" strokeType="INSIDE" width="1130.0" />
+                                    <TableView id="tablaAdministradores" fx:id="tablaLibros" layoutX="0.0" layoutY="0.0" prefHeight="260.0" prefWidth="1130.0">
+                                      <columns>
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="349.0" text="Nombre" fx:id="tnombreL" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="153.0" text="Clave" fx:id="tclaveL" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="282.0" text="Autor" fx:id="tautorL" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="218.0" text="Clasificacion" fx:id="tclasificacionL" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="127.0" text="Disponible" fx:id="tdisponibleL" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="763.0" layoutY="266.0" minHeight="45.0" mnemonicParsing="false" onAction="#initTableLibros" prefHeight="45.0" prefWidth="353.0" text="Mostar todos los libros">
+                                      <effect>
+                                        <Lighting>
+                                          <bumpInput>
+                                            <Shadow />
+                                          </bumpInput>
+                                          <light>
+                                            <javafx.scene.effect.Light.Distant>
+                                              <color>
+                                                <Color blue="0.400" green="0.976" red="1.000" fx:id="x16" />
+                                              </color>
+                                            </javafx.scene.effect.Light.Distant>
+                                          </light>
+                                        </Lighting>
+                                      </effect>
+                                      <graphic>
+                                        <ImageView id="ic_loop_black_48dp.png" fitHeight="44.0" fitWidth="47.0">
+                                          <image>
+                                            <Image url="@../../../../../images/ic_loop_black_48dp.png" preserveRatio="true" smooth="true" />
+                                          </image>
+                                        </ImageView>
+                                      </graphic>
+                                    </Button>
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Miembros">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="1130.0">
+                                  <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="58.0" layoutX="0.0" layoutY="260.0" stroke="$x6" strokeType="INSIDE" width="1130.0" />
+                                    <TableView id="tablaAdministradores" fx:id="tablaMiembros" layoutX="0.0" layoutY="0.0" prefHeight="260.0" prefWidth="1130.0">
+                                      <columns>
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="349.0" text="Nombre" fx:id="tnombreM" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="153.0" text="Clave" fx:id="tclaveM" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="282.0" text="Direccion" fx:id="tdirM" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="218.0" text="Telefono" fx:id="ttelM" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="127.0" text="Sexo" fx:id="tsexoM" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="763.0" layoutY="266.0" minHeight="45.0" mnemonicParsing="false" onAction="#initTableMiembros" prefHeight="45.0" prefWidth="353.0" text="Mostar todos los miembros">
+                                      <effect>
+                                        <Lighting>
+                                          <bumpInput>
+                                            <Shadow />
+                                          </bumpInput>
+                                          <light>
+                                            <javafx.scene.effect.Light.Distant color="$x16" />
+                                          </light>
+                                        </Lighting>
+                                      </effect>
+                                      <graphic>
+                                        <ImageView id="ic_loop_black_48dp.png" fitHeight="44.0" fitWidth="47.0">
+                                          <image>
+                                            <Image url="@../../../../../images/ic_loop_black_48dp.png" preserveRatio="true" smooth="true" />
+                                          </image>
+                                        </ImageView>
+                                      </graphic>
+                                    </Button>
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Rentas">
+                              <content>
+                                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="1130.0">
+                                  <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="58.0" layoutX="0.0" layoutY="260.0" stroke="$x6" strokeType="INSIDE" width="1130.0" />
+                                    <TableView id="tablaAdministradores" fx:id="tablaRentas" layoutX="0.0" layoutY="0.0" prefHeight="260.0" prefWidth="1130.0">
+                                      <columns>
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="309.0" text="ClaveRenta" fx:id="tclaveR" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="206.0" text="ClaveLibro" fx:id="tclaveLibroR" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="226.0" text="ClaveMiembro" fx:id="tclaveMiembroR" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="218.0" text="Fecha" fx:id="tfechaR" />
+                                        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="172.0" text="Hora" fx:id="thoraR" />
+                                      </columns>
+                                    </TableView>
+                                    <Button layoutX="763.0" layoutY="266.0" minHeight="45.0" mnemonicParsing="false" onAction="#initTableRentas" prefHeight="45.0" prefWidth="353.0" text="Mostar todas las rentas">
+                                      <effect>
+                                        <Lighting>
+                                          <bumpInput>
+                                            <Shadow />
+                                          </bumpInput>
+                                          <light>
+                                            <javafx.scene.effect.Light.Distant color="#fff966" />
+                                          </light>
+                                        </Lighting>
+                                      </effect>
+                                      <graphic>
+                                        <ImageView id="ic_loop_black_48dp.png" fitHeight="44.0" fitWidth="47.0">
+                                          <image>
+                                            <Image url="@../../../../../images/ic_loop_black_48dp.png" preserveRatio="true" smooth="true" />
+                                          </image>
+                                        </ImageView>
+                                      </graphic>
+                                    </Button>
+                                  </children>
+                                </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                      </children>
+                    </AnchorPane>
+                  </children>
+                </AnchorPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Eliminar Registro">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="$x6" height="464.0" layoutX="0.0" layoutY="0.0" stroke="$x6" strokeType="INSIDE" width="1152.0" />
+                <Label font="$x1" layoutX="270.0" layoutY="31.0" prefHeight="48.0" prefWidth="228.0" text="Clave de Libro:" textFill="WHITE" />
+                <TextField id="delMatA" fx:id="eliminarLibro" layoutX="498.0" layoutY="31.0" prefHeight="48.0" prefWidth="459.0" />
+                <Label font="$x1" layoutX="33.0" layoutY="31.0" prefHeight="48.0" prefWidth="212.0" text="Eliminar libro" textFill="BLACK" />
+                <Label font="$x1" layoutX="270.0" layoutY="135.0" prefHeight="48.0" prefWidth="205.0" text="Clave de miembro:" textFill="WHITE" />
+                <TextField id="delUserP" fx:id="eliminarMiembro" layoutX="498.0" layoutY="135.0" prefHeight="48.0" prefWidth="459.0" />
+                <Label font="$x1" layoutX="33.0" layoutY="135.0" prefHeight="48.0" prefWidth="212.0" text="Eliminar Miembro" textFill="BLACK" />
+                <Button layoutX="988.0" layoutY="31.0" mnemonicParsing="false" onAction="#deleteLibro" prefHeight="48.0" prefWidth="110.0" text="">
+                  <effect>
+                    <Lighting>
+                      <bumpInput>
+                        <Shadow />
+                      </bumpInput>
+                      <light>
+                        <javafx.scene.effect.Light.Distant color="$x6" />
+                      </light>
+                    </Lighting>
+                  </effect>
+                  <font>
+                    <Font name="AR CENA" size="22.0" fx:id="x5" />
+                  </font>
+                  <graphic>
+                    <ImageView id="ic_delete_black_48dp.png" fitHeight="48.0" fitWidth="50.0">
+                      <image>
+                        <Image url="@../../../../../images/ic_delete_black_48dp.png" preserveRatio="true" smooth="true" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                  <textFill>
+                    <Color blue="0.125" green="0.125" red="0.125" fx:id="x7" />
+                  </textFill>
+                </Button>
+                <Line endX="933.0" endY="4.0" layoutX="201.0" layoutY="107.0" startX="-170.0" startY="-3.0" stroke="WHITE" strokeWidth="4.5" />
+                <Line endX="933.0" endY="4.0" layoutX="206.0" layoutY="210.0" startX="-170.0" startY="-3.0" stroke="WHITE" strokeWidth="4.5" />
+                <Line endX="-23.0" endY="53.0" layoutX="263.0" layoutY="155.0" startX="-22.0" startY="-122.0" stroke="WHITE" strokeWidth="6.0" />
+                <Button font="$x5" layoutX="988.0" layoutY="130.0" mnemonicParsing="false" onAction="#deleteMiembro" prefHeight="48.0" prefWidth="110.0" text="" textFill="$x7">
+                  <effect>
+                    <Lighting>
+                      <bumpInput>
+                        <Shadow />
+                      </bumpInput>
+                      <light>
+                        <javafx.scene.effect.Light.Distant color="$x6" />
+                      </light>
+                    </Lighting>
+                  </effect>
+                  <graphic>
+                    <ImageView id="ic_delete_black_48dp.png" fitHeight="48.0" fitWidth="50.0">
+                      <image>
+                        <Image url="@../../../../../images/ic_delete_black_48dp.png" preserveRatio="true" smooth="true" />
+                      </image>
+                    </ImageView>
+                  </graphic>
+                </Button>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="botonCerrar" font="$x4" layoutX="925.0" layoutY="593.0" mnemonicParsing="false" onAction="#salir" prefHeight="74.0" prefWidth="231.0" text="Salir">
+      <effect>
+        <Lighting surfaceScale="3.5634920634920633">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant color="$x3" />
+          </light>
+        </Lighting>
+      </effect>
+    </Button>
+  </children>
+</AnchorPane>

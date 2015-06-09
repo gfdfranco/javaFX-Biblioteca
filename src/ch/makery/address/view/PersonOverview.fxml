@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ch.makery.address.Main">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff3333" height="600.0" layoutX="0.0" layoutY="0.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+    <ImageView id="uvm.jpg" fitHeight="155.0" fitWidth="600.0" layoutX="0.0" layoutY="0.0">
+      <image>
+        <Image url="@../../../../../imagenes/uvm.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Label layoutX="117.0" layoutY="177.0" prefHeight="57.0" prefWidth="366.0" text="Biblioteca Luman" textFill="WHITE">
+      <font>
+        <Font name="Arial" size="45.0" />
+      </font>
+    </Label>
+    <ImageView id="biblio.jpg" fitHeight="240.5" fitWidth="396.0" layoutX="102.0" layoutY="245.0">
+      <image>
+        <Image url="@../../../../../imagenes/biblio.jpg" preserveRatio="true" smooth="true" />
+      </image>
+    </ImageView>
+    <Button fx:id="inicio" layoutX="238.0" layoutY="514.0" mnemonicParsing="false" onAction="#entrar" prefHeight="50.0" prefWidth="124.0" text="Entrar">
+      <effect>
+        <Lighting diffuseConstant="0.8571428571428571" specularConstant="0.2365079365079365" specularExponent="6.349206349206349" surfaceScale="3.404761904761905">
+          <bumpInput>
+            <Shadow />
+          </bumpInput>
+          <light>
+            <javafx.scene.effect.Light.Distant />
+          </light>
+        </Lighting>
+      </effect>
+      <font>
+        <Font size="22.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
